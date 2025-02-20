@@ -1,0 +1,50 @@
+/* Customize the "Previous" and "Next" buttons */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;  /* Increase button size */
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Hover effect */
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-family: 'Material Icons'; /* Use Material Icons */
+  font-size: 24px;
+  color: white;
+  content: ''; 
+}
+
+.slick-prev::before {
+  content: 'arrow_back'; /* Material Icons left arrow */
+}
+
+.slick-next::before {
+  content: 'arrow_forward'; /* Material Icons right arrow */
+}
+
+.slick-prev {
+  left: -50px; /* Position the "Previous" button */
+}
+
+.slick-next {
+  right: -50px; /* Position the "Next" button */
+}
+.slick-prev:hover::before,
+.slick-next:hover::before {
+  color: #007bff; /* Change icon color on hover */
+}

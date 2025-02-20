@@ -1,0 +1,83 @@
+<header class="fixed-top header">
+  <!-- Top Header -->
+  <div #topHeader class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-4 text-center text-lg-left">
+          <a class="text-color mr-3" href="tel:+918891888330"><strong>CALL </strong>+91 88 91 88 83 30</a>
+          <ul class="list-inline d-inline">
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://facebook.com/themefisher/"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://twitter.com/themefisher"><i class="ti-twitter-alt"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://github.com/themefisher"><i class="ti-github"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://instagram.com/themefisher/"><i class="ti-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8 text-center text-lg-right">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" routerLink="/notice">notice</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" routerLink="/research">research</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" routerLink="/scholarship">SCHOLARSHIP</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#loginModal" data-toggle="modal" data-target="#loginModal">login</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#signupModal" data-toggle="modal" data-target="#signupModal">register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div #navigation class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand" routerLink="/"><img src="assets/images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/about']" routerLinkActive="active">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="courses" routerLinkActive="active">COURSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="events" routerLinkActive="active">EVENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="blog" routerLinkActive="active">BLOG</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" routerLink="teacher">Teacher</a>
+                <a class="dropdown-item" routerLink="teacher-single">Teacher Single</a>
+                <a class="dropdown-item" routerLink="notice">Notice</a>
+                <a class="dropdown-item" routerLink="notice-single">Notice Details</a>
+                <a class="dropdown-item" routerLink="/research">Research</a>
+                <a class="dropdown-item" routerLink="/scholarship">Scholarship</a>
+                <a class="dropdown-item" routerLink="/course-single">Course Details</a>
+                <a class="dropdown-item" routerLink="/event-single">Event Details</a>
+                <a class="dropdown-item" routerLink="/blog-single">Blog Details</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" routerLink="/sub-menu-1">Sub Menu 01</a>
+                <a class="dropdown-item" routerLink="/sub-menu-2">Sub Menu 02</a>
+                <a class="dropdown-item" routerLink="/sub-menu-3">Sub Menu 03</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contact" routerLinkActive="active">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
